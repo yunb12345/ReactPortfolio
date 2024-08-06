@@ -1,3 +1,5 @@
+const descripcion = 'Estudiante de desarrollador de software con ganas de empezar a trabajar y comenzar una nueva etapa en mi vida'
+
 const Hero = () => {
     return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
@@ -10,8 +12,11 @@ const Hero = () => {
                     to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">
                         Desarrollador de Software
                     </span>
-                    
+                    <p className="my-2 max-w-xl py-6 font-light tracking-tighter">{descripcion}</p>
                 </div>
+            </div>
+            <div className="w-full lg:w-1/2 lg:p-8">
+            
             </div>
         </div>
     </div>
