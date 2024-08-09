@@ -4,6 +4,8 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 
+import CVPDF from "../assets/North.pdf";
+
 const descripcion = 'Estudiante de desarrollador de software'
 const container = (delay) => ({
     hidden:{x:-100,opacity:0},
@@ -43,25 +45,33 @@ const Hero = () => {
             transition={{duration:1,delay:1.2}}
             className="w-full lg:w-1/2 lg:p-8 justify-center justify-items-center content-center ">
                 <div className="flex flex-wrap items-center justify-center gap-4 pb-7">
-                    <div>
-                        <AiFillGithub className="text-3xl text-white"/>
-                    </div>
-                   <div>
-                        <AiOutlineLinkedin className="text-3xl text-white"/>
-                   </div>
-                   <div>
-                        <AiOutlineWhatsApp className="text-3xl text-white"/>
-                   </div>
+                    <a href="https://github.com/yunb12345">
+                        <div className="transition ease-in-out rounded hover:bg-slate-200 ">
+                            <AiFillGithub className="text-3xl text-white hover:text-black transition ease-in-out"/>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/agustin-yoon-818ab829a/">
+                        <div className="transition ease-in-out rounded hover:bg-slate-200">
+                            <AiOutlineLinkedin className="text-3xl text-white hover:text-black transition ease-in-out"/>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div className="transition ease-in-out rounded hover:bg-slate-200">
+                            <AiOutlineWhatsApp className="text-3xl text-white hover:text-black transition ease-in-out"/>
+                        </div>
+                    </a>
                 </div>
                 <div className="flex max-w-md mx-auto px-auto items-center justify-center content-center justify-items-center">
-                    <button className="group overflow-hidden group h-14 pl-5 flex items-center space-x-4 border-2 rounded border-fuchsia-400 hover:bg-fuchsia-400 transition-all">
-                        <span className="uppercase text-fuchsia-400 group-hover:text-white">Descargar CV</span>
-                        <div className="w-14">
-                            <div className="h-14 flex border-l-2 border-fuchsia-400">
-                                <AiOutlineArrowDown className="h-5 w-5 m-auto text-fuchsia-400 group-hover:text-white"/>
+                    <a href={CVPDF} download="CV">
+                        <button className="group overflow-hidden group h-14 pl-5 flex items-center space-x-4 border-2 rounded border-fuchsia-400 hover:bg-fuchsia-400 transition-all">
+                            <span className="uppercase text-fuchsia-400 group-hover:text-white">Descargar CV</span>
+                            <div className="w-14">
+                                <div className="h-14 flex border-l-2 border-fuchsia-400">
+                                    <AiOutlineArrowDown className="h-5 w-5 m-auto text-fuchsia-400 group-hover:text-white"/>
+                                </div>
                             </div>
-                        </div>
-                    </button>
+                        </button>
+                    </a>
                 </div>
             </motion.div>
         </div>
