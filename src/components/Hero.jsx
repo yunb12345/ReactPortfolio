@@ -37,7 +37,11 @@ const Hero = () => {
                     className="my-2 max-w-xl py-6 font-light tracking-tighter">{descripcion}</motion.p>
                 </div>
             </div>
-            <div className="w-full lg:w-1/2 lg:p-8 justify-center justify-items-center content-center ">
+            <motion.div 
+            initial={{x:100,opacity:0}}
+            animate={{x:0,opacity:1}}
+            transition={{duration:1,delay:1.2}}
+            className="w-full lg:w-1/2 lg:p-8 justify-center justify-items-center content-center ">
                 <div className="flex flex-wrap items-center justify-center gap-4 pb-7">
                     <div>
                         <AiFillGithub className="text-3xl text-white"/>
@@ -59,7 +63,7 @@ const Hero = () => {
                         </div>
                     </button>
                 </div>
-            </div>
+            </motion.div>
         </div>
     </div>
     );
