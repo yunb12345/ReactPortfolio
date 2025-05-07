@@ -45,17 +45,17 @@ const Hero = () => {
             transition={{duration:1,delay:1.2}}
             className="w-full lg:w-1/2 lg:p-8 justify-center justify-items-center content-center ">
                 <div className="flex flex-wrap items-center justify-center gap-4 pb-7">
-                    <a href="https://github.com/yunb12345">
+                    <a href="https://github.com/yunb12345" target="_blank" rel="noopener noreferrer">
                         <div className="transition ease-in-out rounded hover:bg-slate-200 ">
                             <AiFillGithub className="text-3xl text-white hover:text-black transition ease-in-out"/>
                         </div>
                     </a>
-                    <a href="https://www.linkedin.com/in/agustin-yoon-818ab829a/">
+                    <a href="https://www.linkedin.com/in/agustin-yoon-818ab829a/" target="_blank" rel="noopener noreferrer">
                         <div className="transition ease-in-out rounded hover:bg-slate-200">
                             <AiOutlineLinkedin className="text-3xl text-white hover:text-black transition ease-in-out"/>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="https://wa.me/5491128234936" target="_blank" rel="noopener noreferrer">
                         <div className="transition ease-in-out rounded hover:bg-slate-200">
                             <AiOutlineWhatsApp className="text-3xl text-white hover:text-black transition ease-in-out"/>
                         </div>
